@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Verdant Store - $1000 Budget
+
+A growing brand e-commerce application demonstrating a $1000 budget implementation with Next.js, Clerk authentication, and fast performance.
+
+## Overview
+
+- **Budget**: $1000
+- **Target Business**: Growing brand / Startup
+- **Max Products**: 1000-5000
+- **Performance**: Fast (no artificial delays)
+
+## Features
+
+- Full product catalog with 25 products and advanced filtering
+- User accounts and authentication via Clerk
+- Order history and tracking
+- Wishlists
+- Shopping cart with persistence
+- Admin dashboard with analytics
+- Fast performance (native Next.js speed)
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Authentication**: Clerk
+- **Styling**: CSS with CSS Variables
+- **State**: Server Actions + Cookie-based persistence
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+1. Create a Clerk account at [clerk.com](https://clerk.com)
+2. Create a new application in Clerk dashboard
+3. Copy your publishable key and secret key
+
+### Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Create .env.local file with your Clerk keys
+# NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_key
+# CLERK_SECRET_KEY=sk_test_your_key
+
+# Run development server
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the store.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|-------|-------------|
+| `/` | Product catalog with filtering |
+| `/product/[id]` | Product detail page |
+| `/cart` | Shopping cart |
+| `/checkout` | Checkout flow |
+| `/checkout/success` | Order confirmation |
+| `/wishlist` | User wishlist |
+| `/account` | Account page (requires auth) |
+| `/admin` | Analytics dashboard |
 
-## Learn More
+## Performance Characteristics
 
-To learn more about Next.js, take a look at the following resources:
+This tier has **no artificial delays** - native Next.js speed:
+- Optimized server components
+- Fast page loads (~0.5-1s)
+- Efficient data fetching
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cost Breakdown
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Item | Cost |
+|------|------|
+| Development | ~$700 |
+| Monthly Hosting (Vercel) | ~$25/mo |
+| Headless CMS | ~$50/mo |
+| Stripe Fees | ~2.9% + 30¢ per transaction |
+| Clerk Auth | Free tier / ~$25/mo |
+| **Total First Year** | ~$1000 |
+| **Monthly Cost** | ~$90/mo + transaction fees |
 
-## Deploy on Vercel
+## Best For
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Growing brands
+- Startups scaling their e-commerce
+- Businesses needing user accounts
+- Those wanting fast, modern experience
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
