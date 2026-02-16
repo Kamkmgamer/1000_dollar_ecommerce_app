@@ -8,6 +8,9 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 export const metadata: Metadata = {
   title: "Artisan Collective | Modern E-Commerce for Growing Brands",
   description: "Discover curated fashion, accessories, and home goods from independent designers. Quality craftsmanship for the modern lifestyle.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
