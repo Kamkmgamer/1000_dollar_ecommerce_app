@@ -86,9 +86,9 @@ export default function RootLayout({
                 <div className="footer-col">
                   <h5>Support</h5>
                   <p>
-                    <a href="mailto:hello@artisancollective.com">hello@artisancollective.com</a>
+                    <a href="mailto:khalil@khalil.mageed.net">khalil@khalil.mageed.net</a>
                     <br />
-                    <a href="tel:+18005551234">1-800-555-1234</a>
+                    <a href="tel:+201500405567">+20 150 040 5567</a>
                     <br />
                     <span>Mon — Fri, 9am — 6pm EST</span>
                   </p>
@@ -96,11 +96,11 @@ export default function RootLayout({
                 <div className="footer-col">
                   <h5>Connect</h5>
                   <p>
-                    <a href="#">Instagram</a>
+                    <a href="https://instagram.com/khalil_0017" target="_blank" rel="noopener noreferrer">Instagram</a>
                     <br />
-                    <a href="#">Pinterest</a>
+                    <!-- Pinterest not available -->
                     <br />
-                    <a href="#">Twitter</a>
+                    <a href="https://twitter.com/kamkmgamer" target="_blank" rel="noopener noreferrer">Twitter/X</a>
                   </p>
                 </div>
               </div>
